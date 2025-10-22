@@ -5,7 +5,7 @@ cask "leash-app" do
   url "https://github.com/strongdm/leash/releases/download/v#{version}/leash_app_#{version}.pkg"
   name "Leash-App"
   desc "Leash helper app for macOS"
-  homepage "https://leash.strongdm.ai"
+  homepage "https://github.com/strongdm/leash"
 
   livecheck do
     url :url
@@ -15,8 +15,11 @@ cask "leash-app" do
   depends_on macos: ">= :sonoma"
   depends_on formula: "leash"
 
-  auto_updates true
   pkg "leash_app_#{version}.pkg"
+
+  uninstall pkgutil: "com.strongdm.leash"
+
+  auto_updates true
 
   # No zap stanza required
 end

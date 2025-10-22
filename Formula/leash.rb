@@ -1,5 +1,5 @@
 class Leash < Formula
-  desc "Leash by StrongDM - take your AI agents for a walk"
+  desc "Security, visibility, and authorization for AI agents"
   homepage "https://github.com/strongdm/leash"
   version "0.0.1"
   license "Apache-2.0"
@@ -29,6 +29,6 @@ class Leash < Formula
   end
 
   test do
-    system "#{bin}/leash", "--version"
+    system "bin/leash", "--version"
   end
 end
