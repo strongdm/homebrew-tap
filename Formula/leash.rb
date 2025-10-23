@@ -17,7 +17,7 @@ class Leash < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/strongdm/leash/releases/download/v#{version}/leash_#{version}_linux_arm64.tar.gz"
-      sha256 "sha256:cd9a1ac576ac1747e1c9430ee3fb640ec10fc59a940a81aedf44ad93860d8478"
+      sha256 "cd9a1ac576ac1747e1c9430ee3fb640ec10fc59a940a81aedf44ad93860d8478"
     else
       url "https://github.com/strongdm/leash/releases/download/v#{version}/leash_#{version}_linux_amd64.tar.gz"
       sha256 "8e39cfa55948df6e9751fbe591ecd8c90f74cfb8cd2329b2caabb5753d2b5049"
