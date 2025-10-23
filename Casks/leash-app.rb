@@ -1,6 +1,6 @@
 cask "leash-app" do
-  version "0.0.1"
-  sha256 "48b197ff08c9d05f69fd3e25cb43ed8bc5045c9fe711bfb309dca6fb97b36977"
+  version "1.0.0"
+  sha256 "e7a5e01b0d966160f5f0d831cde912ed102a9054802a61fae09c09df976c1042"
 
   url "https://github.com/strongdm/leash/releases/download/v#{version}/leash_app_#{version}.pkg"
   name "Leash-App"
